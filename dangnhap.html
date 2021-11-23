@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MIKENCO</title>
+	<link rel=" stylesheet" href="css/style.css">
+	
+	 <style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #deebdd;
+				
+			}
+			a {
+			color: #00bd00;
+			}
+		* {
+			box-sizing: border-box;
+		}
+		.slice{
+			background-image:url('img/hinhcuoi.jpg');
+			}
+		.register {
+			width: 500px;
+			padding: 16px;
+			margin: 0 auto;
+			background-color: white;
+		}
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 15px;
+			margin: 5px 0 22px 0;
+			display: inline-block;
+			border: none;
+			background: #f1f1f1;
+		}
+		input[type=text]:focus, input[type=password]:focus {
+			background-color: #ddd;
+			outline: none;
+		}
+		hr {
+			border: 1px solid #f1f1f1;
+			margin-bottom: 25px;
+		}
+		.submit {
+			background-color: #0900bd;
+			color: white;
+			padding: 15px 18px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			opacity: 0.9;
+		}
+		.submit:hover {
+			opacity: 1;
+		}
+		.login {
+			background-color: #ffffff;
+			text-align: center;
+		}
+	</style>
+	<script>
+		function validate(){
+				var username = document.getElementById("username").value;
+				var password = document.getElementById("password").value;
+				if ( username == "hihi" && password == "hihi1"){
+				alert ("Đăng Nhập Thành Công");
+					 }
+					 else{
+					   alert("Đăng Nhập Không Thành Công");
+					   }
+					 return false;
+					 }
+
+		
+      </script>
+	
+</head>
+<body>
+		
+		<div id="container">
+				<div class="menu">
+			<ul class="clearfix">
+				<li><a href="./trangchu.html">HOME</li>
+				<li>
+					<a style="text-align:center;"href="#">PRODUCT <span class="arrow">&#9660;</span></a>
+	 
+					<ul class="sub-menu">
+						<li><a href="./sweater.html">SWEATER</a></li>
+						<li><a href="./shirt.html">SHIRT</a></li>
+						<li><a href="./t-shirt.html">T-SHIRT</a></li>
+						<li><a href="./jean.html">JEANS</a></li>
+					</ul>
+				</li>
+			  <li class="current-item"><a href="./trangchu.html"><img src="img/hinh1.jpg"style="width:70x;height:30px;margin-top:0px;margin-bottom:0px;"></a></li>
+				<li><a href="./stores.html">STORES </a></li>
+				
+				<li><a href="./Aboutus.html">Đăng ký/ Đăng Nhập  </a></li>
+<li><a href="./giohang.html">Giỏ mua </a></li>
+        </ul>
+			</div>
+		<div class="slice">
+			 	
+		
+		<form action="" method="POST" onsubmit="return validate()">
+			<div class="register">
+				<h1>Đăng Nhập</h1>
+		
+				<hr>
+				<label for="username"><b>Tên đăng nhập</b></label>
+				<input type="text" placeholder="Họ và tên" name="username" id="username">
+				<label for="password"><b>Mật khẩu</b></label>
+				<input type="password" placeholder="******" name="password" id="password">
+				<hr>
+				<button type="submit" class="submit">Đăng Nhập</button>
+			</div>
+			<div class="register login">
+				<p> <a href="#">Quên mật khẩu </a></p>
+			</div>
+		</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MIKENCO</title>
+	<link rel=" stylesheet" href="css/style.css">
+	
+	<script>
+		var index = 1;
+		switchImage = function () {
+		var imgs = ["img/hinh2.jpg", "img/hinh3.jpg", "img/hinh4.jpg", "img/hinh5.jpg"];
+		document.getElementById('img').src = imgs[index]; /*Set lại đường dẫn của ảnh*/
+		index++;
+		if (index == 4/*Độ dài mảng để chứa số lượng hình tùy ý nạp vào*/) {
+			index = 0;
+		}
+		}
+		setInterval(switchImage, 2500);
+	</Script>
+
+</head>
+<body>
+
+		<div id="container">
+				<div class="menu">
+			<ul class="clearfix">
+				<li><a href="./trangchu.html">HOME</li>
+				<li>
+					<a style="text-align:center;"href="#">PRODUCT <span class="arrow">&#9660;</span></a>
+	 
+					<ul class="sub-menu">
+						<li><a href="./sweater.html">SWEATER</a></li>
+						<li><a href="./shirt.html">SHIRT</a></li>
+						<li><a href="./t-shirt.html">T-SHIRT</a></li>
+						<li><a href="./jean.html">JEANS</a></li>
+					</ul>
+				</li>
+			  <li class="current-item"><a href="./trangchu.html"><img src="img/hinh1.jpg"style="width:70x;height:30px;margin-top:0px;margin-bottom:0px;"></a></li>
+				<li><a href="./stores.html">STORES </a></li>
+				
+				<li><a href="./Aboutus.html">Đăng Ký/Đăng Nhập  </a></li>
+				<li><a href="./giohang.html">Giỏ mua </a></li>
+			</div>
+
+			<div class="slice">
+			 	<img src="img/hinh2.jpg" style="width:1300px;height:600px;" onclick="switchImange()" id="img" alt="" >
+				<img src="img/hinh3.jpg" style="display:none;width:1300px;height:600px;" onclick="switchImange()" id="img" alt="" >
+				<img src="img/hinh4.jpg" style="display:none;width:1300px;height:600px;"   onclick="switchImange()" id="img"alt="">
+				<img src="img/hinh5.jpg" style="display:none;width:1300px;height:600px;"  onclick="switchImange()" id="img" alt="">
+				<div class="left">
+					<h2><i>VietNam</i> Authenic Brand</h2>
+					<strong>NO.1 LOCAL BRAND 
+						</strong>
+					
+				</div>
+			
+
+			</div>
+			
+			<div class="content"  >
+			<p id="title" >Best <strong>Seller</strong></p>
+			<div class="layer1">
+				<a class="sp" href="./sweater2.html">
+					<img src="img/sweater2.jpg" width=200px alt="">
+				</a>
+				<a class="sp" href="./shirt3.html">
+					<img src="img/shirt3.jpg" width=200px alt="">
+				</a>
+				<a class="sp" href="./sweater1.html">
+					<img src="img/sweater1.jpg" width=200px alt="">
+				</a>
+				<a class="sp" href="./sweater8.html">
+					<img src="img/sweater8.jpg"" width=200px alt="">
+				</a>
+			</div>
+			<div class="layer2">
+				<div class="ten">
+					<p>THE QUEEN </p>
+					<p>SWEATER</p>
+				</div>
+				<div class="ten">
+					<p>SNAKE SKIN </p>
+					<p>SHIRT</p>
+				</div>
+				<div class="ten">
+					<p> NEWS ZEUS</p>
+					<p>SWEATER</P>
+				</div>
+				<div class="ten">
+					<p>SUEDE BOMBER </p>
+					<p>JACKET BEIGE</p>
+				</div>
+			</div>
+			<div class="layer3">
+				<p class="gia">600.000<span>VND</span></p>
+				<p class="gia">900.000<span>VND</span></p>
+				<p class="gia">500.000<span>VND</span></p>
+				<p class="gia">2.000.000<span>VND</span></p>
+			</div>
+		
+		</div>
+			<div class="footer">
+				<div class="about">
+					<h2>GENERAL POLICY</h2>
+					<p><img src="img/bocongthuong.jpg" width="200px" alt=""></p>
+					
+					<p LA DOLCE VITA TRADING COMPANY LIMITED
+
+	DKKD 0107439368 by KHDT Hanoi dated 19/5/2016<br>
+
+	Representative: VU HOANG VU<br>
+
+						   
+	Location: 224 Thai Ha, Trung Liet, Dong Da, Hanoi<br>
+
+	Hotline: 024 7107 9191<br>
+
+	Email: Dolcevitacompany9@gmail.com</p>
+				</div>
+
+		</div>
+</body>

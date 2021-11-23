@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MIKENCO</title>
+	<style>	
+		  body {
+    min-width: 960px;
+  }
+}
+/*Áp dụng cho các thiết bị cầm tay*/
+@media handheld {
+  body {
+    max-width: 320px
+  }
+}
+* {
+   
+	margin: 0;
+	padding: 0;
+
+    }
+ 
+
+.menu {
+    width:1300px;
+    margin:0px ;
+    background:#deebdd;
+    height: 55px;
+ }
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+.menu a {
+ 
+    color:black;
+    text-decoration:none;
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#2342cc;
+} 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+} 
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:20px;
+}
+.menu > ul > li > a {
+    padding:10px 50px;
+    display:inline-block;
+    color:Black;
+}
+.menu > ul > li:hover > a, .menu > ul >  a {
+    background:none;
+}
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu {
+    width:100%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    background:#deebdd;
+}
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+.sub-menu li a {
+    padding:20px 50px;
+    display:block;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#acb7e6;
+}
+</style>
+	
+ <script src="hotro.js"</script>
+
+</head>
+<body>
+
+		<div id="container">
+				<div class="menu">
+			<ul class="clearfix">
+				<li><a href="./trangchu.html">HOME</li>
+				<li>
+					<a style="text-align:center;"href="#">PRODUCT <span class="arrow">&#9660;</span></a>
+	 
+					<ul class="sub-menu">
+						<li><a href="./sweater.html">SWEATER</a></li>
+						<li><a href="./shirt.html">SHIRT</a></li>
+						<li><a href="./t-shirt.html">T-SHIRT</a></li>
+						<li><a href="./jean.html">JEANS</a></li>
+					</ul>
+				</li>
+			  <li class="current-item"><a href="./trangchu.html"><img src="img/hinh1.jpg"style="width:70x;height:30px;margin-top:0px;margin-bottom:0px;"></a></li>
+				<li><a href="./stores.html">STORES </a></li>
+				
+				<li><a href="./Aboutus.html">Đăng Ký/Đăng Nhập  </a></li>
+				<li><a href="./giohang.html">Giỏ mua </a></li>
+			</div>
+			<script> 
+				for(var i = 0  ; i < 100; i++)(
+				console.log(taoid());
+				)
+			</script>
+	</body>
+</html>
+	
+			
+			
+		
